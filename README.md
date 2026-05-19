@@ -31,7 +31,7 @@ The application supports the following user roles:
 
 # User Features and Work Flow
 
-1. **Patient -**
+1. **Patient -**  
    **- Features :**
    - View Personal details, Doctor Assignment, medical reports, vitals and prescription
    - Download medical report history
