@@ -70,3 +70,27 @@ The application supports the following user roles:
 - Check, monitor and genarate patient records, registration, consultations and follow-up visits
 - Track inventory
 - View and genarate Prescription reports
+
+```mermaid
+graph LR
+    %% Style Configuration
+    classDef startEnd fill:#FF7A45,stroke:#FF7A45,stroke-width:2px,color:#fff,rx:20px,ry:20px;
+    classDef process fill:#7070FF,stroke:#7070FF,stroke-width:2px,color:#fff;
+    classDef decision fill:#40E0D0,stroke:#40E0D0,stroke-width:2px,color:#fff;
+
+    %% Flow nodes matching your image shapes
+    A(LAND ON HOMEPAGE) --> B[VIEW PRODUCT]
+    B --> C[VIEW IMAGES]
+    C --> D[READ COMMENTS]
+    D --> E{ADD TO<br>BASKET}
+
+    %% Branching paths
+    E -->|No| F(EXIT SHOP)
+    E -->|Yes| G[VIEW CART]
+    G --> H(CHECKOUT)
+
+    %% Assign styles to match image colors
+    class A,F,H startEnd;
+    class B,C,D,G process;
+    class E decision;
+```
