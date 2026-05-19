@@ -25,9 +25,9 @@
 The application supports the following user roles:
 
 - **Admin** - Full system access
-- **Volunteer** - Manages patient flow, doctor assignments, camp operations, Registers patients and records vitals
-- **Patient** - Patient access
-- **Doctor** - Doctor access
+- **Volunteer** - Manages patient flow, doctor assignments, camp operations, Register patients and records vitals
+- **Patient** - Patient related data access
+- **Doctor** - Doctor related data access
 
 # User Features and Work Flow
 
@@ -38,6 +38,9 @@ The application supports the following user roles:
 - View Personal details, Doctor Assignment, medical reports, vitals and prescription
 - Download medical report history
 - Track visit dates and folow-ups
+
+**Work Flow :**
+[Patient Registration] -> [check vital signs] -> [Consult Doctor] -> [ Diagnosis Test] -> [Consult Doctor] -> [Prescription]
 
 ## 2. Volunteer
 
