@@ -39,7 +39,7 @@ The application supports the following user roles:
 - Download medical report history
 - Track visit dates and folow-ups
 
-**Work Flow :**
+**Work Flow :**  
 [Patient Registration] -> [check vital signs] -> [Consult Doctor] -> [ Diagnosis Test] -> [Consult Doctor] -> [Prescription]
 
 ## 2. Volunteer
@@ -47,9 +47,13 @@ The application supports the following user roles:
 **Features :**
 
 - create, view and update patient registration profiles
+- View doctor details and attendens
 - Assign a patient to specific doctor
 - Track medical report history and update vital signs
 - View test reports, prescription reports, medicine details and follow-ups
+
+**Work Flow :**  
+[Patient Registration] -> [Assign a doctor] -> [Update vital signs] -> [View doctor consulatation] -> [View Diagnosis Tests] -> [View prescription] -> [Assign medicines] -> [follow-ups]
 
 ## 3. Doctor
 
@@ -59,6 +63,9 @@ The application supports the following user roles:
 - view assigned Patient details, medical history, test reports
 - Create, view and upadte presription reports and medication dosage
 - view available Medical camp inventory
+
+**Work Flow :**  
+[Patient Registration details] -> [View vital sign details] -> [View Patient's medical history] -> [View Diagnosis Test reports] -> [Prescription] -> [follow-ups]
 
 ## 4. Admin
 
@@ -70,27 +77,3 @@ The application supports the following user roles:
 - Check, monitor and genarate patient records, registration, consultations and follow-up visits
 - Track inventory
 - View and genarate Prescription reports
-
-```mermaid
-graph LR
-    %% Style Configuration
-    classDef startEnd fill:#FF7A45,stroke:#FF7A45,stroke-width:2px,color:#fff,rx:20px,ry:20px;
-    classDef process fill:#7070FF,stroke:#7070FF,stroke-width:2px,color:#fff;
-    classDef decision fill:#40E0D0,stroke:#40E0D0,stroke-width:2px,color:#fff;
-
-    %% Flow nodes matching your image shapes
-    A(LAND ON HOMEPAGE) --> B[VIEW PRODUCT]
-    B --> C[VIEW IMAGES]
-    C --> D[READ COMMENTS]
-    D --> E{ADD TO<br>BASKET}
-
-    %% Branching paths
-    E -->|No| F(EXIT SHOP)
-    E -->|Yes| G[VIEW CART]
-    G --> H(CHECKOUT)
-
-    %% Assign styles to match image colors
-    class A,F,H startEnd;
-    class B,C,D,G process;
-    class E decision;
-```
