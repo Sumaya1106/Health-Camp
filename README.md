@@ -31,24 +31,24 @@ The application supports the following user roles:
 
 # User Features and Work Flow
 
-1. **Patient -**  
-   **- Features :**
+1. ## Patient -
+   **Features :**
    - View Personal details, Doctor Assignment, medical reports, vitals and prescription
    - Download medical report history
    - Track visit dates and folow-ups
-1. **- Volunteer -**
-   **- Features :**
+1. ## Volunteer -
+   **Features :**
    - create, view and update patient registration profiles
    - Assign a patient to specific doctor
    - Track medical report history and update vital signs
    - View test reports, prescription reports, medicine details and follow-ups
-1. **- Doctor -**
+1. ## Doctor -
    **Features :**
    - View and update doctor's Personal details
    - view assigned Patient details, medical history, test reports
    - Create, view and upadte presription reports and medication dosage
    - view available Medical camp inventory
-1. **- Admin -**
+1. ## Admin -
    **Features :**
    - Provide authorization based on user role
    - CRUD Operations on Doctors, Volunteers and Patients
